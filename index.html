@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Felipe Bruno Hervé — Desenvolvedor</title>
+  <meta name="description" content="Portfólio de Felipe Bruno Hervé: desenvolvedor em formação, Python, Django e JavaScript.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./style.css">
+
+  <script>
+    (function () {
+      var stored = localStorage.getItem('herve-lang');
+      document.documentElement.setAttribute('data-lang', stored === 'en' ? 'en' : 'pt');
+    })();
+  </script>
+</head>
+
+<body>
+
+  <div class="legacy-banner">
+    <span class="lang-pt">Este é o meu portfólio atual. <a href="https://felipebherve.github.io/HerveWebDev/">Veja o primeiro site que eu criei, em 2023 →</a></span>
+    <span class="lang-en">This is my current portfolio. <a href="https://felipebherve.github.io/HerveWebDev/">See the first website I ever built, in 2023 →</a></span>
+  </div>
+
+  <header>
+    <nav class="wrap">
+      <a href="#top" class="brand">felipe<span>.dev</span></a>
+      <button type="button" id="navToggle" class="nav-toggle" onclick="toggleNav()" aria-label="Menu">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about"><span class="lang-pt">Sobre</span><span class="lang-en">About</span></a></li>
+        <li><a href="#skills"><span class="lang-pt">Habilidades</span><span class="lang-en">Skills</span></a></li>
+        <li><a href="#projects"><span class="lang-pt">Projetos</span><span class="lang-en">Projects</span></a></li>
+        <li><a href="#experience"><span class="lang-pt">Experiência</span><span class="lang-en">Experience</span></a></li>
+        <li><a href="#education"><span class="lang-pt">Formação</span><span class="lang-en">Education</span></a></li>
+        <li><a href="#contact"><span class="lang-pt">Contato</span><span class="lang-en">Contact</span></a></li>
+        <li><a class="legacy-link" href="https://felipebherve.github.io/HerveWebDev/">2023 ↗</a></li>
+        <li><button type="button" id="langToggle" class="lang-toggle-btn" onclick="toggleLang()">EN</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero" id="top">
+      <div class="wrap">
+        <span class="eyebrow lang-pt">// desenvolvedor em formação</span>
+        <span class="eyebrow lang-en">// developer in the making</span>
+        <h1>Felipe Bruno Hervé</h1>
+        <p class="subtitle lang-pt">Migrando da área financeira para o desenvolvimento de software — Python, Django e JavaScript.</p>
+        <p class="subtitle lang-en">Moving from finance into software development — Python, Django and JavaScript.</p>
+        <p class="meta lang-pt">Porto Alegre/RS · aberto a remoto, híbrido ou presencial</p>
+        <p class="meta lang-en">Porto Alegre, Brazil · open to remote, hybrid or on-site</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="#projects"><span class="lang-pt">Ver projetos</span><span class="lang-en">View projects</span></a>
+          <a class="btn btn-ghost" href="#contact"><span class="lang-pt">Contato</span><span class="lang-en">Contact</span></a>
+          <a class="btn btn-ghost" href="https://felipebherve.github.io/HerveWebDev/Projetos/Curriculo/index.html"><span class="lang-pt">Currículo ↗</span><span class="lang-en">Résumé ↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="wrap">
+        <span class="eyebrow">// about</span>
+        <h2><span class="lang-pt">Sobre mim</span><span class="lang-en">About me</span></h2>
+        <p class="lang-pt" style="max-width:640px;">Depois de anos na área financeira e contábil — conciliação
+          bancária, contas a pagar e a receber, folha de pagamento — migrei de carreira para a programação. Comecei a
+          estudar por conta própria em 2023, completei um bootcamp de backend em Python e Django (IFRS + Instituto
+          Hardware) e hoje curso Análise e Desenvolvimento de Sistemas na UniRitter. Documento tudo o que estudo e
+          publico no <a href="https://github.com/felipebherve" target="_blank">GitHub</a>.</p>
+        <p class="lang-en" style="max-width:640px;">After years in finance and accounting — bank reconciliation,
+          accounts payable and receivable, payroll — I moved my career into programming. I started teaching myself
+          in 2023, completed a backend bootcamp in Python and Django (IFRS + Instituto Hardware), and I'm now
+          studying Systems Analysis and Development at UniRitter. I document everything I study and publish it on
+          <a href="https://github.com/felipebherve" target="_blank">GitHub</a>.</p>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="wrap">
+        <span class="eyebrow">// skills</span>
+        <h2><span class="lang-pt">Habilidades</span><span class="lang-en">Skills</span></h2>
+
+        <div class="tag-group">
+          <h3 class="lang-pt">Desenvolvimento</h3>
+          <h3 class="lang-en">Development</h3>
+          <ul class="tags">
+            <li>Python</li>
+            <li>Django</li>
+            <li>Django REST Framework</li>
+            <li>JavaScript</li>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>Java</li>
+            <li>Git &amp; GitHub</li>
+            <li>SQLite</li>
+          </ul>
+        </div>
+
+        <div class="tag-group">
+          <h3 class="lang-pt">Base financeira e administrativa</h3>
+          <h3 class="lang-en">Finance &amp; business background</h3>
+          <ul class="tags">
+            <li class="lang-pt">Conciliação bancária</li>
+            <li class="lang-en">Bank reconciliation</li>
+            <li class="lang-pt">Contas a pagar/receber</li>
+            <li class="lang-en">Accounts payable/receivable</li>
+            <li class="lang-pt">Folha de pagamento</li>
+            <li class="lang-en">Payroll</li>
+            <li>Conexos</li>
+            <li>Sage Folhamatic</li>
+            <li>Domínio</li>
+            <li>Conta Azul</li>
+            <li>Office</li>
+          </ul>
+        </div>
+
+        <div class="tag-group">
+          <h3 class="lang-pt">Idiomas</h3>
+          <h3 class="lang-en">Languages</h3>
+          <ul class="tags">
+            <li class="lang-pt">Português (nativo)</li>
+            <li class="lang-en">Portuguese (native)</li>
+            <li class="lang-pt">Inglês (B1)</li>
+            <li class="lang-en">English (B1)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="wrap">
+        <span class="eyebrow">// projects</span>
+        <h2><span class="lang-pt">Projetos</span><span class="lang-en">Projects</span></h2>
+        <p class="section-intro lang-pt">Todo o código está no meu <a href="https://github.com/felipebherve" target="_blank">GitHub</a>, com README em português e inglês em cada repositório.</p>
+        <p class="section-intro lang-en">All the code is on my <a href="https://github.com/felipebherve" target="_blank">GitHub</a>, with a README in Portuguese and English on every repository.</p>
+
+        <div class="project-grid">
+
+          <div class="card featured">
+            <span class="card-tag">techtinga-api</span>
+            <h3 class="lang-pt">Desafio final: API de projetos e tarefas</h3>
+            <h3 class="lang-en">Final challenge: projects &amp; tasks API</h3>
+            <p class="lang-pt">API REST construída a partir de um enunciado de negócio escrito, sem código pronto.
+              Importação de CSV em lote, relatório anual, e as limitações conhecidas documentadas no README.</p>
+            <p class="lang-en">A REST API built from a written business brief, with no starter code. Bulk CSV
+              import, a yearly report, and the known limitations documented in the README.</p>
+            <div class="chips"><span>Python</span><span>Django</span><span>DRF</span></div>
+            <a class="card-link" href="https://github.com/felipebherve/techtinga-api" target="_blank">GitHub ↗</a>
+          </div>
+
+          <div class="card">
+            <span class="card-tag">django-ifrs-estudos</span>
+            <h3 class="lang-pt">Curso de backend completo</h3>
+            <h3 class="lang-en">Full backend course</h3>
+            <p class="lang-pt">Anotações de aula e 4 projetos Django: agência de turismo, sistema de cobrança,
+              gestão de clube e exercícios de API.</p>
+            <p class="lang-en">Lesson notes and 4 Django projects: a travel agency, a collections system, club
+              management and API exercises.</p>
+            <div class="chips"><span>Python</span><span>Django</span></div>
+            <a class="card-link" href="https://github.com/felipebherve/django-ifrs-estudos" target="_blank">GitHub ↗</a>
+          </div>
+
+          <div class="card">
+            <span class="card-tag">javascript-udemy-estudos</span>
+            <h3 class="lang-pt">Fundamentos de JavaScript</h3>
+            <h3 class="lang-en">JavaScript fundamentals</h3>
+            <p class="lang-pt">Variáveis, funções, closures e orientação a objetos, com uma calculadora de salário
+              líquido como projeto prático.</p>
+            <p class="lang-en">Variables, functions, closures and object orientation, with a net-salary calculator
+              as the hands-on project.</p>
+            <div class="chips"><span>JavaScript</span></div>
+            <a class="card-link" href="https://github.com/felipebherve/javascript-udemy-estudos" target="_blank">GitHub ↗</a>
+          </div>
+
+          <div class="card">
+            <span class="card-tag">calculadora-salario-liquido</span>
+            <h3 class="lang-pt">Calculadora de salário líquido</h3>
+            <h3 class="lang-en">Net-salary calculator</h3>
+            <p class="lang-pt">Cálculo de INSS, IRRF e vale-transporte em JavaScript puro, a partir das regras
+              reais da folha de pagamento brasileira.</p>
+            <p class="lang-en">INSS, income tax and transport-voucher calculations in plain JavaScript, based on
+              real Brazilian payroll rules.</p>
+            <div class="chips"><span>JavaScript</span></div>
+            <a class="card-link" href="https://github.com/felipebherve/calculadora-salario-liquido" target="_blank">GitHub ↗</a>
+          </div>
+
+          <div class="card">
+            <span class="card-tag">java-uniritter-ads</span>
+            <h3 class="lang-pt">Lógica e Java</h3>
+            <h3 class="lang-en">Logic &amp; Java</h3>
+            <p class="lang-pt">Lógica de programação e fundamentos de orientação a objetos em Java, da minha
+              faculdade (ADS).</p>
+            <p class="lang-en">Programming logic and OOP fundamentals in Java, from my degree (Systems Analysis and
+              Development).</p>
+            <div class="chips"><span>Java</span></div>
+            <a class="card-link" href="https://github.com/felipebherve/java-uniritter-ads" target="_blank">GitHub ↗</a>
+          </div>
+
+          <div class="card">
+            <span class="card-tag">html-css-js-estudos</span>
+            <h3 class="lang-pt">Onde tudo começou</h3>
+            <h3 class="lang-en">Where it all started</h3>
+            <p class="lang-pt">HTML, CSS, JavaScript e Git autodidatas, desde 2023 — incluindo o primeiro site que
+              publiquei.</p>
+            <p class="lang-en">Self-taught HTML, CSS, JavaScript and Git, since 2023 — including the first website
+              I ever published.</p>
+            <div class="chips"><span>HTML</span><span>CSS</span><span>Git</span></div>
+            <a class="card-link" href="https://github.com/felipebherve/html-css-js-estudos" target="_blank">GitHub ↗</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <div class="wrap">
+        <span class="eyebrow">// experience</span>
+        <h2><span class="lang-pt">Experiência</span><span class="lang-en">Experience</span></h2>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="role lang-pt">Auxiliar Financeiro Pleno</div>
+            <div class="role lang-en">Mid-Level Financial Assistant</div>
+            <div class="org">Seger Comercial Importadora e Exportadora S.A.</div>
+            <div class="period lang-pt">Setembro 2016 – Fevereiro 2019</div>
+            <div class="period lang-en">September 2016 – February 2019</div>
+            <ul class="lang-pt">
+              <li>Rotina financeira completa: conciliação bancária, contas a pagar/receber, emissão de notas e documentos.</li>
+              <li>Liderei sozinho a migração do sistema financeiro (Sage Finmatic/Folhamatic) para o Conexos.</li>
+              <li>Progressão interna: estagiário → efetivado → Auxiliar Financeiro Pleno.</li>
+            </ul>
+            <ul class="lang-en">
+              <li>Full financial routine: bank reconciliation, accounts payable/receivable, invoicing and documentation.</li>
+              <li>Led the migration of the financial system (Sage Finmatic/Folhamatic) to Conexos on my own.</li>
+              <li>Internal progression: intern → hired → Mid-Level Financial Assistant.</li>
+            </ul>
+          </div>
+
+          <div class="timeline-item">
+            <div class="role lang-pt">Auxiliar de Cobrança</div>
+            <div class="role lang-en">Collections Assistant</div>
+            <div class="org">CETER – Centro de Educação Tecnológica República</div>
+            <div class="period lang-pt">Maio 2016 – Setembro 2016</div>
+            <div class="period lang-en">May 2016 – September 2016</div>
+            <ul class="lang-pt">
+              <li>Atendimento ao cliente e efetuação de cobranças.</li>
+              <li>Identifiquei e corrigi inconsistências de cobrança deixadas pela gestão anterior.</li>
+            </ul>
+            <ul class="lang-en">
+              <li>Customer service and collections.</li>
+              <li>Found and fixed collection inconsistencies left by the previous management.</li>
+            </ul>
+          </div>
+        </div>
+
+        <p style="margin-top:28px; font-size:14px;">
+          <span class="lang-pt">Histórico completo, com todas as experiências, no <a href="https://felipebherve.github.io/HerveWebDev/Projetos/Curriculo/index.html">currículo ↗</a>.</span>
+          <span class="lang-en">Full history, with every role, in the <a href="https://felipebherve.github.io/HerveWebDev/Projetos/Curriculo/index.html">résumé ↗</a>.</span>
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="education">
+      <div class="wrap">
+        <span class="eyebrow">// education</span>
+        <h2><span class="lang-pt">Formação</span><span class="lang-en">Education</span></h2>
+
+        <div class="edu-list">
+          <div class="edu-item">
+            <div class="degree lang-pt">Análise e Desenvolvimento de Sistemas</div>
+            <div class="degree lang-en">Systems Analysis and Development</div>
+            <div class="org">UniRitter — <span class="lang-pt">EAD</span><span class="lang-en">distance learning</span></div>
+            <span class="status lang-pt">cursando, desde 2026</span>
+            <span class="status lang-en">in progress, since 2026</span>
+          </div>
+          <div class="edu-item">
+            <div class="degree lang-pt">Curso de Backend com Python e Django</div>
+            <div class="degree lang-en">Backend course in Python and Django</div>
+            <div class="org">IFRS + Instituto Hardware</div>
+            <span class="status lang-pt">concluído em 2026</span>
+            <span class="status lang-en">completed in 2026</span>
+          </div>
+          <div class="edu-item">
+            <div class="degree lang-pt">Ciências Contábeis</div>
+            <div class="degree lang-en">Accounting</div>
+            <div class="org">UFSC</div>
+            <span class="status lang-pt">cursado parcialmente</span>
+            <span class="status lang-en">partially completed</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="wrap">
+        <span class="eyebrow">// contact</span>
+        <h2><span class="lang-pt">Vamos conversar</span><span class="lang-en">Let's talk</span></h2>
+        <p class="section-intro lang-pt">Aberto a vagas júnior ou estágio em desenvolvimento (remoto, híbrido ou
+          presencial em Porto Alegre), e também a vagas administrativas, financeiras ou de cobrança.</p>
+        <p class="section-intro lang-en">Open to junior or internship roles in development (remote, hybrid or
+          on-site in Porto Alegre, Brazil), and also to administrative, finance or collections roles.</p>
+
+        <div class="contact-grid">
+          <div class="contact-card">
+            <span class="label">E-mail</span>
+            <a href="mailto:felipebherve@gmail.com">felipebherve@gmail.com</a>
+          </div>
+          <div class="contact-card">
+            <span class="label">WhatsApp</span>
+            <a href="https://wa.me/5548998410099" target="_blank">(48) 99841-0099</a>
+          </div>
+          <div class="contact-card">
+            <span class="label">GitHub</span>
+            <a href="https://github.com/felipebherve" target="_blank">github.com/felipebherve</a>
+          </div>
+          <div class="contact-card">
+            <span class="label">LinkedIn</span>
+            <a href="https://www.linkedin.com/in/felipe-bruno-hervé-771338179" target="_blank">felipe-bruno-hervé</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p class="lang-pt">Este é o meu portfólio atual. O primeiro site que criei foi em 2023 —
+        <a href="https://felipebherve.github.io/HerveWebDev/">veja aqui →</a></p>
+      <p class="lang-en">This is my current portfolio. The first website I ever built was in 2023 —
+        <a href="https://felipebherve.github.io/HerveWebDev/">see it here →</a></p>
+      <p>© 2026 Felipe Bruno Hervé</p>
+    </div>
+  </footer>
+
+  <script src="./app.js"></script>
+</body>
+
+</html>
