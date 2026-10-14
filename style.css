@@ -311,6 +311,10 @@ nav.wrap {
   background: linear-gradient(180deg, var(--accent-soft), var(--surface) 60%);
 }
 
+.card.wide {
+  grid-column: 1 / -1;
+}
+
 .card .card-tag {
   font-family: var(--font-mono);
   font-size: 12px;
@@ -348,6 +352,12 @@ nav.wrap {
 .card .card-link {
   font-weight: 600;
   font-size: 14px;
+}
+
+.card .card-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ experiência / timeline */
