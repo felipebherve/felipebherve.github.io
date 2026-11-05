@@ -52,8 +52,8 @@
         <span class="eyebrow lang-pt">// desenvolvedor em formação</span>
         <span class="eyebrow lang-en">// developer in the making</span>
         <h1>Felipe Bruno Hervé</h1>
-        <p class="subtitle lang-pt">Migrando da área financeira para o desenvolvimento de software — Python, Django e JavaScript.</p>
-        <p class="subtitle lang-en">Moving from finance into software development — Python, Django and JavaScript.</p>
+        <p class="subtitle lang-pt">Migrando da área financeira para o desenvolvimento de software — Python, Django, JavaScript e IA aplicada (agentes, RAG e automações).</p>
+        <p class="subtitle lang-en">Moving from finance into software development — Python, Django, JavaScript and applied AI (agents, RAG and automations).</p>
         <p class="meta lang-pt">Porto Alegre/RS · aberto a remoto, híbrido ou presencial</p>
         <p class="meta lang-en">Porto Alegre, Brazil · open to remote, hybrid or on-site</p>
         <div class="actions">
@@ -71,12 +71,17 @@
         <p class="lang-pt" style="max-width:640px;">Depois de anos na área financeira e contábil — conciliação
           bancária, contas a pagar e a receber, folha de pagamento — migrei de carreira para a programação. Comecei a
           estudar por conta própria em 2023, completei um bootcamp de backend em Python e Django (IFRS + Instituto
-          Hardware) e hoje curso Análise e Desenvolvimento de Sistemas na UniRitter. Documento tudo o que estudo e
-          publico no <a href="https://github.com/felipebherve" target="_blank">GitHub</a>.</p>
+          Hardware) e hoje curso Análise e Desenvolvimento de Sistemas na UniRitter. Em 2026 passei a estudar IA
+          aplicada: montei no meu computador um agente com modelos locais (Ollama) ligado ao Claude por MCP, com
+          memória por RAG, e automações que leem e-mail, agenda e vagas e montam um relatório diário. Documento tudo o
+          que estudo e publico no <a href="https://github.com/felipebherve" target="_blank">GitHub</a>.</p>
         <p class="lang-en" style="max-width:640px;">After years in finance and accounting — bank reconciliation,
           accounts payable and receivable, payroll — I moved my career into programming. I started teaching myself
           in 2023, completed a backend bootcamp in Python and Django (IFRS + Instituto Hardware), and I'm now
-          studying Systems Analysis and Development at UniRitter. I document everything I study and publish it on
+          studying Systems Analysis and Development at UniRitter. In 2026 I started studying applied AI: I built an
+          agent on my own computer that runs local models (Ollama) and connects to Claude through MCP, with RAG
+          memory, plus automations that read email, calendar and job boards and put together a daily report. I
+          document everything I study and publish it on
           <a href="https://github.com/felipebherve" target="_blank">GitHub</a>.</p>
       </div>
     </section>
@@ -99,6 +104,48 @@
             <li>Java</li>
             <li>Git &amp; GitHub</li>
             <li>SQLite</li>
+            <li>PostgreSQL</li>
+            <li>Docker</li>
+            <li>Linux</li>
+            <li>pytest</li>
+            <li>HTMX</li>
+            <li>Tailwind CSS</li>
+            <li>GitHub Actions</li>
+          </ul>
+        </div>
+
+        <div class="tag-group">
+          <h3 class="lang-pt">IA e automação</h3>
+          <h3 class="lang-en">AI &amp; automation</h3>
+          <ul class="tags">
+            <li class="lang-pt">Agentes de IA</li>
+            <li class="lang-en">AI agents</li>
+            <li>MCP (Model Context Protocol)</li>
+            <li>RAG (embeddings)</li>
+            <li class="lang-pt">LLMs locais (Ollama)</li>
+            <li class="lang-en">Local LLMs (Ollama)</li>
+            <li class="lang-pt">APIs de IA (Claude, Gemini, OpenAI)</li>
+            <li class="lang-en">AI APIs (Claude, Gemini, OpenAI)</li>
+            <li class="lang-pt">Engenharia de prompt</li>
+            <li class="lang-en">Prompt engineering</li>
+            <li class="lang-pt">Automação de navegador (Playwright)</li>
+            <li class="lang-en">Browser automation (Playwright)</li>
+            <li>OmniRoute</li>
+            <li class="lang-pt">Skills do Claude</li>
+            <li class="lang-en">Claude skills</li>
+          </ul>
+        </div>
+
+        <div class="tag-group">
+          <h3 class="lang-pt">Estudando agora</h3>
+          <h3 class="lang-en">Studying now</h3>
+          <ul class="tags">
+            <li>TypeScript / NestJS</li>
+            <li>Flutter</li>
+            <li>FastAPI</li>
+            <li>CrewAI</li>
+            <li>OpenHands</li>
+            <li>IoT</li>
           </ul>
         </div>
 
@@ -137,8 +184,8 @@
       <div class="wrap">
         <span class="eyebrow">// projects</span>
         <h2><span class="lang-pt">Projetos</span><span class="lang-en">Projects</span></h2>
-        <p class="section-intro lang-pt">Todo o código está no meu <a href="https://github.com/felipebherve" target="_blank">GitHub</a>, com README em português e inglês em cada repositório.</p>
-        <p class="section-intro lang-en">All the code is on my <a href="https://github.com/felipebherve" target="_blank">GitHub</a>, with a README in Portuguese and English on every repository.</p>
+        <p class="section-intro lang-pt">O código público está no meu <a href="https://github.com/felipebherve" target="_blank">GitHub</a>, com README em português e inglês em cada repositório. Os projetos marcados como “código privado” posso mostrar numa entrevista.</p>
+        <p class="section-intro lang-en">My public code is on my <a href="https://github.com/felipebherve" target="_blank">GitHub</a>, with a README in Portuguese and English on every repository. Projects marked “private code” I can walk you through in an interview.</p>
 
         <div class="project-grid">
 
@@ -163,6 +210,71 @@
               <a class="card-link" href="https://felipebherve.github.io/falavado/" target="_blank"><span class="lang-pt">Ver o site ↗</span><span class="lang-en">Visit the site ↗</span></a>
               <a class="card-link" href="https://github.com/felipebherve/falavado" target="_blank">GitHub ↗</a>
             </div>
+          </div>
+
+          <div class="card featured wide">
+            <span class="card-tag">agente-local · <span class="lang-pt">código privado</span><span class="lang-en">private code</span></span>
+            <h3 class="lang-pt">Agente de IA local ligado ao Claude</h3>
+            <h3 class="lang-en">Local AI agent connected to Claude</h3>
+            <p class="lang-pt">Um servidor MCP que eu mesmo montei no meu PC (RTX 3060). Ele liga o Claude a modelos que
+              rodam no computador com o Ollama: um "Maestro" recebe o pedido em português e escolhe quem resolve
+              (revisor de código, testes, git, memória, leitura de vagas, descrição de tela). A memória usa RAG com
+              embeddings (nomic-embed-text) para achar só o trecho relevante de um projeto. Um navegador automatizado
+              (Playwright) lê páginas com os logins salvos. O trabalho mecânico fica com os modelos locais e o Claude
+              faz só o necessário: o relatório de economia já mostrou mais de 250 mil tokens poupados em 91 tarefas.</p>
+            <p class="lang-en">An MCP server I built myself on my PC (RTX 3060). It connects Claude to models that run
+              locally with Ollama: a "Maestro" takes a request in Portuguese and picks who handles it (code reviewer,
+              tests, git, memory, job-post reader, screen description). Memory uses RAG with embeddings
+              (nomic-embed-text) to fetch only the relevant part of a project. An automated browser (Playwright) reads
+              pages with saved logins. Mechanical work goes to the local models and Claude only does what it must: the
+              savings report already shows more than 250 thousand tokens saved across 91 tasks.</p>
+            <div class="chips"><span>MCP</span><span>Ollama</span><span>RAG</span><span>Playwright</span><span>Claude</span></div>
+          </div>
+
+          <div class="card featured">
+            <span class="card-tag">jornal · <span class="lang-pt">automação pessoal</span><span class="lang-en">personal automation</span></span>
+            <h3 class="lang-pt">Jornal diário com IA: e-mail, agenda e vagas</h3>
+            <h3 class="lang-en">AI daily paper: email, calendar and jobs</h3>
+            <p class="lang-pt">Uma rotina agendada (segunda, quarta e sexta) em que o Claude e o agente local leem o
+              Gmail e organizam por marcadores, conferem a agenda, buscam eventos e vagas, escrevem uma carta de
+              apresentação para cada vaga e publicam um jornal em página web. O jornal tem leitura em voz alta,
+              semáforo de candidatura e caixas de marcar salvas num banco, que o próximo jornal lê para não repetir
+              vagas.</p>
+            <p class="lang-en">A scheduled routine (Monday, Wednesday and Friday) in which Claude and the local agent
+              read Gmail and sort it with labels, check the calendar, look for events and job posts, write a cover
+              letter for each job and publish a newspaper-style web page. It has read-aloud, a traffic light for how
+              to apply, and checkboxes saved to a database that the next edition reads so it does not repeat jobs.</p>
+            <div class="chips"><span>Claude</span><span>Gmail API</span><span>Google Calendar</span><span>JavaScript</span></div>
+          </div>
+
+          <div class="card featured">
+            <span class="card-tag">herbssystem · <span class="lang-pt">código privado</span><span class="lang-en">private code</span></span>
+            <h3 class="lang-pt">HerbsSystem: sites e gestão para pequenos negócios</h3>
+            <h3 class="lang-en">HerbsSystem: websites and management for small businesses</h3>
+            <p class="lang-pt">Plataforma em Django para pequenos negócios: site, agenda de horários, clientes e
+              importação de planilhas, com várias empresas no mesmo sistema e os dados de cada uma separados. Tem
+              login com verificação em duas etapas, fila de tarefas em segundo plano, testes automáticos e roda em
+              Docker com PostgreSQL. Feito em etapas, a partir de uma especificação e 51 tickets.</p>
+            <p class="lang-en">A Django platform for small businesses: website, appointment booking, clients and
+              spreadsheet import, with many companies in one system and each one's data kept apart. It has two-step
+              login, a background task queue, automated tests, and runs in Docker with PostgreSQL. Built step by step
+              from a written spec and 51 tickets.</p>
+            <div class="chips"><span>Django 5.2</span><span>PostgreSQL</span><span>HTMX</span><span>Docker</span><span>pytest</span></div>
+          </div>
+
+          <div class="card featured">
+            <span class="card-tag">minhavida · <span class="lang-pt">código privado</span><span class="lang-en">private code</span></span>
+            <h3 class="lang-pt">MinhaVida: app de finanças pessoais</h3>
+            <h3 class="lang-en">MinhaVida: personal finance app</h3>
+            <p class="lang-pt">App em fase inicial para juntar as contas do banco pelo Open Finance, mostrar gráficos
+              de gastos e receitas e categorizar transações com machine learning. API em NestJS (TypeScript), app em
+              Flutter para celular, computador e web, e um serviço Python (FastAPI) para o ML. Decisões de arquitetura
+              registradas em ADRs, testes e integração contínua.</p>
+            <p class="lang-en">An early-stage app to bring bank accounts together through Open Finance, chart spending
+              and income, and categorize transactions with machine learning. NestJS (TypeScript) API, a Flutter app for
+              phone, desktop and web, and a Python (FastAPI) service for the ML part. Architecture decisions recorded
+              as ADRs, with tests and continuous integration.</p>
+            <div class="chips"><span>NestJS</span><span>TypeScript</span><span>Flutter</span><span>FastAPI</span></div>
           </div>
 
           <div class="card featured">
@@ -341,6 +453,13 @@
             <div class="org">UniRitter — <span class="lang-pt">EAD</span><span class="lang-en">distance learning</span></div>
             <span class="status lang-pt">cursando, desde 2026</span>
             <span class="status lang-en">in progress, since 2026</span>
+          </div>
+          <div class="edu-item">
+            <div class="degree lang-pt">EmpreendAIoT: Capacitação em IoT e empreendedorismo</div>
+            <div class="degree lang-en">EmpreendAIoT: IoT and entrepreneurship training</div>
+            <div class="org">Instituto Hardware BR</div>
+            <span class="status lang-pt">cursando, 2026</span>
+            <span class="status lang-en">in progress, 2026</span>
           </div>
           <div class="edu-item">
             <div class="degree lang-pt">Curso de Backend com Python e Django</div>
